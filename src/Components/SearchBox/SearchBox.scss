@@ -1,0 +1,50 @@
+// @use "../../styles/partials/breakpoints" as *;
+// @use "../../styles/partials/colors" as *;
+// @use "../../styles/partials/font" as *;
+// @use "../../styles/partials/mixins" as *;
+
+
+
+::placeholder {
+    color:black;
+  }
+  
+  
+  .searchbar {
+    width: 100%;
+    margin-right: 1.5rem;
+  }
+
+
+
+.input {
+//   background-image: url("../../assets/images/search.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position: 4%;
+//   background-color: $formField-background-color;
+  padding-left: 2rem;
+//   width: %;
+  height: 100%;
+  outline: none;
+//   border: .0625rem solid $divider-color;
+  border-radius: .25rem;
+  font-family: "AvenirNext";
+//   color: $videoComponent-color;
+
+}
+
+
+::placeholder {
+  color:black;
+}
+
+
+.searchbar {
+  width: 100%;
+  margin-right: 1.5rem;
+}
+
+.logo {
+  width: max;
+}
