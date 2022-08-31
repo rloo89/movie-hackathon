@@ -1,5 +1,7 @@
-export default function TrendingCard() {
+export default function() {
   return (
-    <div>TrendingCard</div>
+    <div className="trending__card" >
+        
+    </div>
   )
 }
