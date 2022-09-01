@@ -4,7 +4,10 @@ import TrendingBox from "../../Components/TrendingBox/TrendingBox";
 import ShowsNav from "../../Components/ShowsNav/ShowsNav";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import videoBg from "../HomePage/video.mp4"
+import logo from "../HomePage/logo-2.jpg"
 import { useParams } from "react-router-dom";
+import "./HomePage.scss"
 
 const TV_API = "https://api.themoviedb.org/3/search/tv";
 const API_KEY = "de66be7a82e7cc167b3ecb1b850cbc1c";
@@ -29,8 +32,9 @@ function HomePage() {
 
   return (
     <>
-    {/* <ShowsNav /> */}
-
+  <div className="logo-container">
+  <img className="image" src={logo} alt="" />
+  </div>
 	<ShowsNav/>
       {results.length > 0 && ( // && signifca and then run the next of code
         <SearchBar
@@ -49,9 +53,9 @@ function HomePage() {
         )}
 		 <TrendingBox results={results} />
       </div>
-	  <video loop autoPlay>
-        <source src="https://www.pexels.com/video/close-up-view-of-a-camera-on-blur-background-1998560/" type="video/mp4"/>
-		</video>
+      {/* <video className="video">
+        <source src={videoBg} autoPlay loop muted/>
+		</video> */}
     </>
   );
 }

@@ -1,13 +1,14 @@
 
 .trending__container{
-    background-color: #57585a;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/221808/sky.jpg");
+    // background-image: url("../../../bg-image.jpg");
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 3.125rem;
 
 }
-
 
 
 

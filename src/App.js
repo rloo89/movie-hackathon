@@ -12,8 +12,6 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          hi
-        {/* <video autoplay loop muted plays-inline src="Assets/video.mp4"></video> */}
           <Route path="/" element={<HomePage />} />
           <Route path="/tvshows/:id" element={<TvShows />} />
         </Routes>
