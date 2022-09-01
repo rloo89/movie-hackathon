@@ -11,8 +11,10 @@
   
   
   .searchbar {
-    width: 100%;
-    margin-right: 1.5rem;
+    display: flex;
+    justify-content: center;
+    // width: 100%;
+    // margin-right: 1.5rem;
   }
 
 
@@ -39,11 +41,6 @@
   color:black;
 }
 
-
-.searchbar {
-  width: 100%;
-  margin-right: 1.5rem;
-}
 
 .logo {
   width: max;
