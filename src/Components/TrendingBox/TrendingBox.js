@@ -2,12 +2,14 @@ import TrendingCard from "../TrendingCard/TrendingCard";
 import "./TrendingBox.scss";
 
 
-export default function TrendingBox() {
+export default function TrendingBox({ results }) {
   return (
     <>
     <div className= "trending__container">
         <h3>Trending</h3>
-        <TrendingCard />
+        {results.map((r) => 
+          <TrendingCard key={r.id} value={r} />
+        )}
     </div>
     </>
   )

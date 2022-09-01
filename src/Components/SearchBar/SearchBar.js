@@ -1,16 +1,21 @@
 import "./SearchBar.scss";
 import React from 'react';
 
-const SearchBox = (props) => {
+const SearchBox = ({ value, setValue, onSearch}) => {
+	const onClick = (e) => {
+		e.preventDefault();
+		onSearch();
+	}
+
 	return (
 		<form className="searchbar">
 			<input
 				className='searchbar__input'
-				value={props.value}
-				onChange={(event) => props.setSearchValue(event.target.value)}
+				value={value}
+				onChange={(event) => setValue(event.target.value)}
 				placeholder='Type to search...'
 			></input>
-			<button>Search</button>
+			<button onClick={onClick}>Search</button>
 		</form>
 	);
 };
