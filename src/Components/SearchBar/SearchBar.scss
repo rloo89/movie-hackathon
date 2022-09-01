@@ -6,11 +6,45 @@
   
   
   .searchbar {
+    padding-top: 10rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+    &__form{
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 40%;
+    }
+  
+    &__input{
+      width: 100%;
+      height: 2rem;
+      background-color: #fafafa;
+      border-radius: 50px;
+      border: 1px gray solid;
+
+      &::placeholder{
+        padding:1rem;
+        color: gray;
+      }
+    }
+
+    &__btn{
+      margin-top: 1.5rem;
+      height: 2rem;
+      width: 40%;
+      border-radius: 50px;
+      background-color: cornsilk;
+
+    }
    
   }
 
+ 
 
 
 .input {

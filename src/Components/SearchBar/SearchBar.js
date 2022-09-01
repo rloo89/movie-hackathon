@@ -8,15 +8,17 @@ const SearchBox = ({ value, setValue, onSearch}) => {
 	}
 
 	return (
-		<form className="searchbar">
+		<div className="searchbar">
+		<form className="searchbar__form">
 			<input
 				className='searchbar__input'
 				value={value}
 				onChange={(event) => setValue(event.target.value)}
 				placeholder='Type to search...'
 			></input>
-			<button onClick={onClick}>Search</button>
+			<button className="searchbar__btn" onClick={onClick}>Search</button>
 		</form>
+		</div>
 	);
 };
 

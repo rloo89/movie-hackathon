@@ -1,0 +1,35 @@
+.show-image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 1438px;
+
+    &__container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__wrapper{
+        height: 100%;
+    }
+
+    &__img{
+        width: 300px;
+    }
+}
+
+.btn__link{
+    text-decoration: none;
+}
+
+.btn {
+  margin: 1.5rem;
+  height: 2rem;
+  width: 20%;
+  border-radius: 50px;
+  background-color: cornsilk;
+}
+
+h1, h2, p {
+    color: white;
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import SearchBar from "../../Components/SearchBar/SearchBar";
 import TrendingBox from "../../Components/TrendingBox/TrendingBox";
+import ShowsNav from "../../Components/ShowsNav/ShowsNav";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
@@ -28,6 +29,9 @@ function HomePage() {
 
   return (
     <>
+    {/* <ShowsNav /> */}
+
+	<ShowsNav/>
       {results.length > 0 && ( // && signifca and then run the next of code
         <SearchBar
           value={searchValue}
@@ -36,7 +40,6 @@ function HomePage() {
         />
       )}
       <div>
-        <TrendingBox results={results} />
         {results.length <= 0 && (
           <SearchBar
             value={searchValue}
@@ -44,7 +47,11 @@ function HomePage() {
             onSearch={onSearch}
           />
         )}
+		 <TrendingBox results={results} />
       </div>
+	  <video loop autoPlay>
+        <source src="https://www.pexels.com/video/close-up-view-of-a-camera-on-blur-background-1998560/" type="video/mp4"/>
+		</video>
     </>
   );
 }
